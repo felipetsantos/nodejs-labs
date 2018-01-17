@@ -1,0 +1,24 @@
+doctype
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/chunkfive-fontface.css')
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  body
+    div.container
+      header.header
+        div.row
+          div.col-sm-4
+            h4.text-muted Site Teste        
+          div.col-sm-8
+            nav
+              ul.nav.nav-pills
+                li.nav-item 
+                  a(href="/").nav-link Home
+                li.nav-item 
+                  a(href="/about").nav-link About
+                li.nav-item 
+                  a(href="/contact").nav-link Contact
+      block content
+      footer
